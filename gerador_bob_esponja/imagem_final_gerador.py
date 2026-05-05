@@ -75,8 +75,11 @@ pos6 = (2040, 220)
 text7 = "Grupo"
 pos7 = (1086, 1375+a)
 
-text8 = "40h"
+text8 = "30h"
 pos8 = (364, 350)
+
+text9 = "40h"
+pos9 = (364, 300)
 
 text_color = "#000000" #preto
 # Adiciona o texto à imagem
@@ -88,6 +91,7 @@ draw.text( pos5 , text5, fill=text_color, font=font5)
 draw.text( pos6 , text6, fill=text_color, font=font5)
 draw.text( pos7 , text7, fill=text_color, font=font3)
 draw.text( pos8 , text8, fill=text_color, font=font4)
+draw.text( pos9 , text9, fill=text_color, font=font4)
 
 # Corta a imagem para a caixa delimitadora
 media = media.crop(media.getbbox())
@@ -122,6 +126,7 @@ base.paste(backside_dias_invertido, (223, 267-altura),backside_dias_invertido)
 base.paste(dias, (coordx, 80-altura),dias)  # ajuste a posição conforme necessário
 base.paste(dias_invertido, (223, 267-altura),dias_invertido) 
 base.paste(linha_tracejada, (410,359), linha_tracejada)
+base.paste(linha_tracejada, (410,309), linha_tracejada)
 # Salva a imagem resultante
 base.save(os.path.join(current_directory, 'images', 'imagem_final.png'))
 base.show()
