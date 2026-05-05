@@ -63,7 +63,7 @@ c = -20
 text3 = "Cálculo 1 com Professor Ricardo Ramos Fragelli"
 pos3 = (b+300+350, 75+c)
 
-text4 = "1 semestre de 2024 - Segunda prova"
+text4 = "1 semestre de 2026 - Primeira Prova"
 pos4 = (b+350+420, 125+c)
 
 text5 = "Dia  " + str(gerando_grafico_base.dia_atual)
@@ -75,7 +75,7 @@ pos6 = (2040, 220)
 text7 = "Grupo"
 pos7 = (1086, 1375+a)
 
-text8 = "28h"
+text8 = "40h"
 pos8 = (364, 350)
 
 text_color = "#000000" #preto

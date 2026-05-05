@@ -12,8 +12,8 @@ df = pd.read_excel(file_path)
 resol = 1
 linha_grade = 1.1
 media_turma = media_y_data = df.iloc[:, 1].mean()
-dias_totais = 100
-dia_atual = 99
+dias_totais = 15
+dia_atual = 1
 porcent_graf_dias = (dia_atual / dias_totais) * 30
 
 # Extrair os dados para os eixos x e y
@@ -72,9 +72,12 @@ fig.update_layout(
         ),
     xaxis=dict(
         tickvals=x_data,
-        tickfont=dict(size=14*resol*2),  # Aumenta o tamanho da fonte dos números no eixo x
-        titlefont=dict(size=20*resol*2)
-        ),
+        tickfont=dict(size=14*resol*2),
+        title=dict(
+            text="",  # você não está usando título mesmo
+            font=dict(size=20*resol*2)
+        )
+    ),
     margin=dict(l=410*resol,r=185*resol, b=92*2*resol-a,t=392*resol+a), #l=410/2,r=185/2, b=92,t=392/2)
     width=largura,  # Definir a largura da figura
     height=altura,  # Definir a altura da figura
