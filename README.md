@@ -7,7 +7,7 @@ Este projeto gera visuais de acompanhamento das “300 horas” de estudo usando
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/moonshinerd/graficos-trezentos.git
+   git clone https://github.com/Jorgehtg/graficos-trezentos
    cd graficos-trezentos
    ```
 
