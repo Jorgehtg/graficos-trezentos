@@ -95,12 +95,12 @@ current_directory = os.path.dirname(os.path.abspath(__file__))
 # Constrói os caminhos relativos à pasta "bob_esponja"
 path_imagem_0hour = os.path.join(current_directory, 'copa_do_mundo_assets', '0hours.png')
 path_imagem_2hour = os.path.join(current_directory, 'copa_do_mundo_assets', '2hours.png')
-path_imagem_4hour = os.path.join(current_directory, 'copa_do_mundo_assets', '1.png')
-path_imagem_6hour = os.path.join(current_directory, 'copa_do_mundo_assets', '2.png')
-path_imagem_8hour = os.path.join(current_directory, 'copa_do_mundo_assets', '3.png')
-path_imagem_10hour = os.path.join(current_directory, 'copa_do_mundo_assets', '4.png')
-path_imagem_12hour = os.path.join(current_directory, 'copa_do_mundo_assets', '5.png')
-path_imagem_14hour = os.path.join(current_directory, 'copa_do_mundo_assets', '6.png')
+path_imagem_4hour = os.path.join(current_directory, 'copa_do_mundo_assets', 'rayan.jpg')
+path_imagem_6hour = os.path.join(current_directory, 'copa_do_mundo_assets', 'messi.jpg')
+path_imagem_8hour = os.path.join(current_directory, 'copa_do_mundo_assets', 'cr7.jpg')
+path_imagem_10hour = os.path.join(current_directory, 'copa_do_mundo_assets', 'neymar.png')
+path_imagem_12hour = os.path.join(current_directory, 'copa_do_mundo_assets', 'alisson.jpeg')
+path_imagem_14hour = os.path.join(current_directory, 'copa_do_mundo_assets', 'taça.jpg')
 
 path_medalha = os.path.join(current_directory, 'demais_assets', 'medalha.png')
 path_medalha2 = os.path.join(current_directory, 'demais_assets', 'medalha.png')
@@ -108,12 +108,12 @@ path_imagem_logounb = os.path.join(current_directory, 'demais_assets', 'logo_unb
 path_imagem_logotrezentos = os.path.join(current_directory, 'demais_assets', 'trezentos.png')
 
 imagens = [
-    (path_imagem_4hour, -0.07*linha_grade, 0.22),
-    (path_imagem_6hour, -0.07*linha_grade, 0.36),
-    (path_imagem_8hour, -0.07*linha_grade, 0.5),
-    (path_imagem_10hour, -0.07*linha_grade, 0.64),
-    (path_imagem_12hour, -0.07*linha_grade, 0.78),
-    (path_imagem_14hour, -0.07*linha_grade, 0.92),
+    (path_imagem_4hour, -0.09*linha_grade, 0.22),
+    (path_imagem_6hour, -0.09*linha_grade, 0.36),
+    (path_imagem_8hour, -0.09*linha_grade, 0.5),
+    (path_imagem_10hour, -0.09*linha_grade, 0.64),
+    (path_imagem_12hour, -0.09*linha_grade, 0.78),
+    (path_imagem_14hour, -0.09*linha_grade, 0.92),
 ]
 
 for imagem_url, x, y in imagens:
@@ -124,8 +124,8 @@ for imagem_url, x, y in imagens:
             y=y,  # Posição y no canto inferior esquerdo do layout
             xref="paper",
             yref="paper",
-            sizex=0.12,  # Ajuste conforme necessário
-            sizey=0.12,  # Ajuste conforme necessário
+            sizex=0.11,  # Ajuste conforme necessário
+            sizey=0.11,  # Ajuste conforme necessário
             xanchor="left",  # Ancoragem à esquerda
             yanchor="bottom"  # Ancoragem na parte inferior
         )
@@ -133,9 +133,9 @@ for imagem_url, x, y in imagens:
 
 a=0.045
 imagens = [
-    (path_imagem_0hour, -0.11*linha_grade1, -0.05),
-    (path_imagem_2hour, -0.11*linha_grade1, 0.08),
-    (path_medalha, -0.085*linha_grade1, 1.050),
+    (path_imagem_0hour, -0.125*linha_grade1, -0.05),
+    (path_imagem_2hour, -0.125*linha_grade1, 0.08),
+    (path_medalha, -0.105*linha_grade1, 1.050),
     (path_imagem_logotrezentos, -0.25, 1.225+a),
     (path_imagem_logounb, 0.999, 1.22+a),
 ]
