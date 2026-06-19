@@ -14,7 +14,7 @@ linha_grade = 1.3
 linha_grade1 = 1.1
 media_turma = media_y_data = df.iloc[:, 1].mean()
 dias_totais = 12
-dia_atual = 7
+dia_atual = 9
 porcent_graf_dias = (dia_atual / dias_totais) * 30
 
 # Extrair os dados para os eixos x e y
